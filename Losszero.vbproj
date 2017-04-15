@@ -1,0 +1,758 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBE199FF-370A-4DD9-8EAA-58118962DDCF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Losszero.My.MyApplication</StartupObject>
+    <RootNamespace>Losszero</RootNamespace>
+    <AssemblyName>Losszero</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>게시\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Losszero.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Losszero.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Losszero.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Losszero.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>C:\Program Files (x86)\Bunifu Technologies\Bunifu Framework Manager\bin\updates\Bunifu_UI_1.5\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\REF\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alog\Alog.vb" />
+    <Compile Include="Alog\AlogStrategy.vb" />
+    <Compile Include="Alog\StandardStrategy2.vb" />
+    <Compile Include="Alog\StockStrategy2.vb" />
+    <Compile Include="Alog\StockStrategy1.vb" />
+    <Compile Include="Alog\StandardStrategy1.vb" />
+    <Compile Include="Alog\CombineAlogVisitor.vb" />
+    <Compile Include="Alog\CutAlog.vb" />
+    <Compile Include="Alog\CutErrorAlog.vb" />
+    <Compile Include="Alog\DiffQtyMinAlog.vb" />
+    <Compile Include="Alog\DiffTonMinAlog.vb" />
+    <Compile Include="Alog\LinkedContinue.vb" />
+    <Compile Include="Alog\LinkedPerfact.vb" />
+    <Compile Include="Alog\LinkedStartAlog.vb" />
+    <Compile Include="Alog\ReBarAlogVisitor.vb" />
+    <Compile Include="Alog\DetailStrategy.vb" />
+    <Compile Include="Alog\RemainSubTon.vb" />
+    <Compile Include="Alog\SubAlog.vb" />
+    <Compile Include="Alog\ZangDaeAlog.vb" />
+    <Compile Include="Alog\ZumSteelAlog.vb" />
+    <Compile Include="BaseData\Base.vb" />
+    <Compile Include="BaseData\BaseData.vb" />
+    <Compile Include="BaseData\Search\ChkProcessingVisitor.vb" />
+    <Compile Include="BaseData\Search\CoilTonVisitor.vb" />
+    <Compile Include="BaseData\Search\CoilVisitor.vb" />
+    <Compile Include="BaseData\Element.vb" />
+    <Compile Include="BaseData\Entry.vb" />
+    <Compile Include="BaseData\Hdm.vb" />
+    <Compile Include="BaseData\Search\HdmLoadTotalTonVisitor.vb" />
+    <Compile Include="BaseData\Search\KongjungDataVisitor.vb" />
+    <Compile Include="BaseData\Search\LoadTotalTonVisitor.vb" />
+    <Compile Include="BaseData\Search\NoBaseTonVisitor.vb" />
+    <Compile Include="BaseData\Search\NoBaseVisitor.vb" />
+    <Compile Include="BaseData\Search\NoMatchTonVisitor.vb" />
+    <Compile Include="BaseData\Search\NoMatchTotalTonVisitor.vb" />
+    <Compile Include="BaseData\Search\NoMatchVisitor.vb" />
+    <Compile Include="BaseData\Visitor.vb" />
+    <Compile Include="Data\BasePrice.vb" />
+    <Compile Include="Data\CoilShape.vb" />
+    <Compile Include="Data\CoilShapeList.vb" />
+    <Compile Include="Data\Mkg.vb" />
+    <Compile Include="Data\SettingInfo.vb" />
+    <Compile Include="Data\Shape.vb" />
+    <Compile Include="Data\ShapeList.vb" />
+    <Compile Include="Data\SteelMeter.vb" />
+    <Compile Include="Data\Stock.vb" />
+    <Compile Include="Data\StockList.vb" />
+    <Compile Include="Data\ZSerialization.vb" />
+    <Compile Include="Data\ZXml.vb" />
+    <Compile Include="Data\ZXmlCoilShpae.vb" />
+    <Compile Include="Data\ZXmlSerialization.vb" />
+    <Compile Include="Data\ZXmlSetting.vb" />
+    <Compile Include="Data\ZXmlShape.vb" />
+    <Compile Include="Data\ZXmlStock.vb" />
+    <Compile Include="Factory\CombineNodeFactory.vb" />
+    <Compile Include="Filter\BaseFilter\BaseChkFilter.vb" />
+    <Compile Include="Filter\BaseFilter\BaseChkFilterDefaultFactory.vb" />
+    <Compile Include="Filter\BaseFilter\BaseChkFilterFactory.vb" />
+    <Compile Include="Filter\BaseFilter\BaseChkisBaseFilter.vb" />
+    <Compile Include="Filter\BaseFilter\BaseChkNoCoilFilter.vb" />
+    <Compile Include="Filter\BaseFilter\BaseChkNoFilter.vb" />
+    <Compile Include="Filter\BaseFilter\BaseChkNoneProcessFilter.vb" />
+    <Compile Include="Filter\BaseFilter\BaseChkProcessFilter.vb" />
+    <Compile Include="Filter\BaseFilter\BaseChkTonManyFilter.vb" />
+    <Compile Include="Filter\BaseFilter\BaseChkZumLenFilter.vb" />
+    <Compile Include="Filter\BaseFilter\BaseZangDaeFilter.vb" />
+    <Compile Include="Filter\CoilFilter\CoilFilter.vb" />
+    <Compile Include="Filter\CoilFilter\CoilHdmFilter.vb" />
+    <Compile Include="Filter\CoilFilter\CoilLenFilter.vb" />
+    <Compile Include="Filter\CoilFilter\CoilNoFilter.vb" />
+    <Compile Include="Filter\CoilFilter\CoilShapeFilter.vb" />
+    <Compile Include="Filter\CombineFilter\CBDifferentFilter.vb" />
+    <Compile Include="Filter\CombineFilter\CBFilter.vb" />
+    <Compile Include="Filter\CombineFilter\CBFilterDefaultFactory.vb" />
+    <Compile Include="Filter\CombineFilter\CBFilterFactory.vb" />
+    <Compile Include="Filter\CombineFilter\CBKongjungFilter.vb" />
+    <Compile Include="Filter\CombineFilter\CBMoreTonFilter.vb" />
+    <Compile Include="Filter\CombineFilter\CBNofilter.vb" />
+    <Compile Include="Filter\CombineFilter\CBPartFilter.vb" />
+    <Compile Include="Filter\CombineFilter\CBPriorityFilter.vb" />
+    <Compile Include="Filter\CombineFilter\CBSceneFilter.vb" />
+    <Compile Include="Filter\CombineFilter\CBShapeFilter.vb" />
+    <Compile Include="Filter\CombineFilter\CBTonManyFilter.vb" />
+    <Compile Include="Filter\makeBaseFilter\BaseDimenFilter.vb" />
+    <Compile Include="Filter\makeBaseFilter\BaseFilter.vb" />
+    <Compile Include="Filter\makeBaseFilter\BaseFilterDefaultFactory.vb" />
+    <Compile Include="Filter\makeBaseFilter\BaseFilterFactory.vb" />
+    <Compile Include="Filter\makeBaseFilter\BaseFilterTonFilter.vb" />
+    <Compile Include="Filter\makeBaseFilter\BaseLineFilter.vb" />
+    <Compile Include="Filter\makeBaseFilter\BaseNoCoilFilter.vb" />
+    <Compile Include="Filter\makeBaseFilter\BaseNoFilter.vb" />
+    <Compile Include="Filter\makeBaseFilter\BaseQtyGroupFilter.vb" />
+    <Compile Include="Filter\SearchBaseFilter\BaseDimenSearh.vb" />
+    <Compile Include="Filter\SearchBaseFilter\BaseHardSearch.vb" />
+    <Compile Include="Filter\SearchBaseFilter\BaseTonSearch.vb" />
+    <Compile Include="Filter\SearchREntryFilter\REntryDimen.vb" />
+    <Compile Include="Filter\SearchREntryFilter\RentryFilter.vb" />
+    <Compile Include="Filter\SearchREntryFilter\REntryHard.vb" />
+    <Compile Include="Filter\SearchREntryFilter\REntryNofilter.vb" />
+    <Compile Include="Filter\SearchREntryFilter\REntryTon.vb" />
+    <Compile Include="FrameWork\AlogFacade.vb" />
+    <Compile Include="FrameWork\DataMgrFacade.vb" />
+    <Compile Include="FrameWork\FrameWork.vb" />
+    <Compile Include="FrameWork\Observer\Publisher.vb" />
+    <Compile Include="FrameWork\Observer\ResultGenerator.vb" />
+    <Compile Include="FrameWork\Observer\Observer.vb" />
+    <Compile Include="Graph\BasicMChart.vb" />
+    <Compile Include="Graph\CombineGraph.vb" />
+    <Compile Include="Graph\GraphFactory.vb" />
+    <Compile Include="Graph\MChart.vb" />
+    <Compile Include="Graph\MChartBar.vb" />
+    <Compile Include="Graph\MChartDeco.vb" />
+    <Compile Include="Graph\MChartPie.vb" />
+    <Compile Include="Graph\MChartStackBar.vb" />
+    <Compile Include="Graph\MSeriel.vb" />
+    <Compile Include="Graph\MSerielRemain.vb" />
+    <Compile Include="Graph\MSerielRemainSte.vb" />
+    <Compile Include="Graph\MSerielRoot.vb" />
+    <Compile Include="Graph\MSerielSteel.vb" />
+    <Compile Include="Main\Losszero.vb" />
+    <Compile Include="PlaceName\Kongjung.vb" />
+    <Compile Include="PlaceName\Part.vb" />
+    <Compile Include="PlaceName\PElement.vb" />
+    <Compile Include="PlaceName\PEntry.vb" />
+    <Compile Include="PlaceName\Place.vb" />
+    <Compile Include="PlaceName\PlaceVisitor\KongjungIdxListVisitor.vb" />
+    <Compile Include="PlaceName\PlaceVisitor\SceneIdxListVisitor.vb" />
+    <Compile Include="PlaceName\PlaceVisitor\SceneToKongjungIdxVisitor.vb" />
+    <Compile Include="PlaceName\PlaceVisitor\TreeViewSimpleVisitor.vb" />
+    <Compile Include="PlaceName\PVisitor.vb" />
+    <Compile Include="PlaceName\Scene.vb" />
+    <Compile Include="Print\Print.vb" />
+    <Compile Include="Print\PrintChart.vb" />
+    <Compile Include="Readable\DbfRead.vb" />
+    <Compile Include="Readable\Readable.vb" />
+    <Compile Include="ResultBase\RBase.vb" />
+    <Compile Include="ResultBase\RCombine.vb" />
+    <Compile Include="ResultBase\RCombineElement.vb" />
+    <Compile Include="ResultBase\RCombineLink.vb" />
+    <Compile Include="ResultBase\RCombineRemain.vb" />
+    <Compile Include="ResultBase\RCombineRemainSteel.vb" />
+    <Compile Include="ResultBase\RCombineSte.vb" />
+    <Compile Include="ResultBase\RElement.vb" />
+    <Compile Include="ResultBase\REntry.vb" />
+    <Compile Include="ResultBase\RHdm.vb" />
+    <Compile Include="ResultBase\RRebar.vb" />
+    <Compile Include="ResultBase\RVisitor.vb" />
+    <Compile Include="ResultBase\Search\EachTonVisitor.vb" />
+    <Compile Include="ResultBase\Search\HdmMeterRentyVisitor.vb" />
+    <Compile Include="ResultBase\Search\MakeEtcVisitor.vb" />
+    <Compile Include="ResultBase\Search\TotalCutBarVisitor.vb" />
+    <Compile Include="ResultBase\Search\TotalCombineVisitor.vb" />
+    <Compile Include="ResultBase\Search\TotalErrorVisitor.vb" />
+    <Compile Include="ResultBase\Search\TotalHdmMeterTonVisitor.vb" />
+    <Compile Include="ResultBase\Search\TotalSaveMoneyVisitor.vb" />
+    <Compile Include="ResultBase\Search\TotalTonVisitor.vb" />
+    <Compile Include="ResultBase\Search\TotalZangdaeVisitor.vb" />
+    <Compile Include="ResultBase\Search\TotalZumVisitor.vb" />
+    <Compile Include="Steel\Steel.vb" />
+    <Compile Include="Steel\SteelList.vb" />
+    <Compile Include="UI\AllStockGraphView.Designer.vb">
+      <DependentUpon>AllStockGraphView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AllStockGraphView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CoilAddForm.Designer.vb">
+      <DependentUpon>CoilAddForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CoilAddForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CoilListForm.Designer.vb">
+      <DependentUpon>CoilListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CoilListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GraphViewerForm.Designer.vb">
+      <DependentUpon>GraphViewerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GraphViewerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\HomeControl.Designer.vb">
+      <DependentUpon>HomeControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HomeControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\InputDataControl.Designer.vb">
+      <DependentUpon>InputDataControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InputDataControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ListFilter.Designer.vb">
+      <DependentUpon>ListFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ListFilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LoginControl.Designer.vb">
+      <DependentUpon>LoginControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LoginControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UI\MatchCard.Designer.vb">
+      <DependentUpon>MatchCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MatchCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ProgressForm.Designer.vb">
+      <DependentUpon>ProgressForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ProgressForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ResultControl.Designer.vb">
+      <DependentUpon>ResultControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultDBF.Designer.vb">
+      <DependentUpon>ResultDBF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultDBF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultMain.Designer.vb">
+      <DependentUpon>ResultMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultMain.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultMatch.Designer.vb">
+      <DependentUpon>ResultMatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultMatch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultMatch_Combine.Designer.vb">
+      <DependentUpon>ResultMatch_Combine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultMatch_Combine.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultMatch_CombineCards.Designer.vb">
+      <DependentUpon>ResultMatch_CombineCards.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultMatch_CombineCards.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultMatch_Error.Designer.vb">
+      <DependentUpon>ResultMatch_Error.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultMatch_Error.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultMatch_Rebar.Designer.vb">
+      <DependentUpon>ResultMatch_Rebar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultMatch_Rebar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultMatch_Zangdae.Designer.vb">
+      <DependentUpon>ResultMatch_Zangdae.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultMatch_Zangdae.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultMatch_Zum.Designer.vb">
+      <DependentUpon>ResultMatch_Zum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultMatch_Zum.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultMoney.Designer.vb">
+      <DependentUpon>ResultMoney.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultMoney.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultNomatch.Designer.vb">
+      <DependentUpon>ResultNomatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultNomatch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultNoMatch_coil.Designer.vb">
+      <DependentUpon>ResultNoMatch_coil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultNoMatch_coil.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultNoMatch_nobase.Designer.vb">
+      <DependentUpon>ResultNoMatch_nobase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultNoMatch_nobase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultNoMatch_non.Designer.vb">
+      <DependentUpon>ResultNoMatch_non.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultNoMatch_non.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultStock.Designer.vb">
+      <DependentUpon>ResultStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultStock.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultStock_BarGrpah.Designer.vb">
+      <DependentUpon>ResultStock_BarGrpah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultStock_BarGrpah.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultStock_BTNS.Designer.vb">
+      <DependentUpon>ResultStock_BTNS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultStock_BTNS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultStock_cut.Designer.vb">
+      <DependentUpon>ResultStock_cut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultStock_cut.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultStock_list.Designer.vb">
+      <DependentUpon>ResultStock_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultStock_list.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ResultStock_Combine.Designer.vb">
+      <DependentUpon>ResultStock_Combine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResultStock_Combine.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SettingBasePrice.Designer.vb">
+      <DependentUpon>SettingBasePrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SettingBasePrice.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SettingCombine.Designer.vb">
+      <DependentUpon>SettingCombine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SettingCombine.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SettingCommon.Designer.vb">
+      <DependentUpon>SettingCommon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SettingCommon.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SettingControl.Designer.vb">
+      <DependentUpon>SettingControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SettingControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SettingLoss.Designer.vb">
+      <DependentUpon>SettingLoss.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SettingLoss.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SettingMM.Designer.vb">
+      <DependentUpon>SettingMM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SettingMM.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SettingZum.Designer.vb">
+      <DependentUpon>SettingZum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SettingZum.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ShapeListForm.Designer.vb">
+      <DependentUpon>ShapeListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShapeListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SteelDetailForm.Designer.vb">
+      <DependentUpon>SteelDetailForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SteelDetailForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StockAddForm.Designer.vb">
+      <DependentUpon>StockAddForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StockAddForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StockForm.Designer.vb">
+      <DependentUpon>StockForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StockForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserData\JSON_Result.vb" />
+    <Compile Include="UserData\User.vb" />
+    <Compile Include="UserLogin\Login.vb" />
+    <Compile Include="UserLogin\ServerLogin.vb" />
+    <Compile Include="Utils\CalcUtils.vb" />
+    <Compile Include="Utils\Etc.vb" />
+    <Compile Include="Utils\Sort\HashTableSort.vb" />
+    <Compile Include="Utils\MakeDirctory.vb" />
+    <Compile Include="Utils\RandomChar.vb" />
+    <Compile Include="Utils\Sort\RCombineSortByMoney.vb" />
+    <Compile Include="Utils\Sort\REntrySortByMoney.vb" />
+    <Compile Include="Utils\Sort\SteelSortByNumber.vb" />
+    <Compile Include="Writeable\DbfWrite.vb" />
+    <Compile Include="Writeable\Writable.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\AllStockGraphView.resx">
+      <DependentUpon>AllStockGraphView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CoilAddForm.resx">
+      <DependentUpon>CoilAddForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CoilListForm.resx">
+      <DependentUpon>CoilListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GraphViewerForm.resx">
+      <DependentUpon>GraphViewerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\HomeControl.resx">
+      <DependentUpon>HomeControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InputDataControl.resx">
+      <DependentUpon>InputDataControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ListFilter.resx">
+      <DependentUpon>ListFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LoginControl.resx">
+      <DependentUpon>LoginControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MatchCard.resx">
+      <DependentUpon>MatchCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ProgressForm.resx">
+      <DependentUpon>ProgressForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultControl.resx">
+      <DependentUpon>ResultControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultDBF.resx">
+      <DependentUpon>ResultDBF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultMain.resx">
+      <DependentUpon>ResultMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultMatch.resx">
+      <DependentUpon>ResultMatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultMatch_Combine.resx">
+      <DependentUpon>ResultMatch_Combine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultMatch_CombineCards.resx">
+      <DependentUpon>ResultMatch_CombineCards.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultMatch_Error.resx">
+      <DependentUpon>ResultMatch_Error.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultMatch_Rebar.resx">
+      <DependentUpon>ResultMatch_Rebar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultMatch_Zangdae.resx">
+      <DependentUpon>ResultMatch_Zangdae.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultMatch_Zum.resx">
+      <DependentUpon>ResultMatch_Zum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultMoney.resx">
+      <DependentUpon>ResultMoney.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultNomatch.resx">
+      <DependentUpon>ResultNomatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultNoMatch_coil.resx">
+      <DependentUpon>ResultNoMatch_coil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultNoMatch_nobase.resx">
+      <DependentUpon>ResultNoMatch_nobase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultNoMatch_non.resx">
+      <DependentUpon>ResultNoMatch_non.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultStock.resx">
+      <DependentUpon>ResultStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultStock_BarGrpah.resx">
+      <DependentUpon>ResultStock_BarGrpah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultStock_BTNS.resx">
+      <DependentUpon>ResultStock_BTNS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultStock_cut.resx">
+      <DependentUpon>ResultStock_cut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultStock_list.resx">
+      <DependentUpon>ResultStock_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResultStock_Combine.resx">
+      <DependentUpon>ResultStock_Combine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SettingBasePrice.resx">
+      <DependentUpon>SettingBasePrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SettingCombine.resx">
+      <DependentUpon>SettingCombine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SettingCommon.resx">
+      <DependentUpon>SettingCommon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SettingControl.resx">
+      <DependentUpon>SettingControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SettingLoss.resx">
+      <DependentUpon>SettingLoss.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SettingMM.resx">
+      <DependentUpon>SettingMM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SettingZum.resx">
+      <DependentUpon>SettingZum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ShapeListForm.resx">
+      <DependentUpon>ShapeListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SteelDetailForm.resx">
+      <DependentUpon>SteelDetailForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StockAddForm.resx">
+      <DependentUpon>StockAddForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StockForm.resx">
+      <DependentUpon>StockForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application2.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="xml\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SettingInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LossAsTon>false</LossAsTon>
+  <remainIsOK>true</remainIsOK>
+  <zangDaeExcept>true</zangDaeExcept>
+  <baseTON>0</baseTON>
+  <zumTON>7</zumTON>
+  <allowErrorLen>40</allowErrorLen>
+  <baseLoss>3</baseLoss>
+  <basePrice>525000</basePrice>
+  <ZumLengths>
+    <anyType xsi:type="xsd:int">4300</anyType>
+    <anyType xsi:type="xsd:int">3950</anyType>
+    <anyType xsi:type="xsd:int">3130</anyType>
+  </ZumLengths>
+  <step5>1</step5>
+  <step4MIN>1</step4MIN>
+  <step4MAX>10</step4MAX>
+  <step3MIN>10</step3MIN>
+  <step3MAX>20</step3MAX>
+  <step2MIN>20</step2MIN>
+  <step2MAX>74</step2MAX>
+  <step1>75</step1>
+  <coilexcept>true</coilexcept>
+  <sameSceneIsOK>false</sameSceneIsOK>
+  <sameKongjungIsOK>true</sameKongjungIsOK>
+  <sameShapeIsOK>true</sameShapeIsOK>
+  <Use10mm>true</Use10mm>
+  <Use13mm>true</Use13mm>
+  <Use16mm>true</Use16mm>
+  <Use19mm>true</Use19mm>
+  <Use22mm>true</Use22mm>
+  <Use25mm>true</Use25mm>
+  <Use29mm>true</Use29mm>
+  <Use32mm>true</Use32mm>
+  <barLoosPermit>0.03</barLoosPermit>
+  <CbLossPermit>0.03</CbLossPermit>
+  <StockOnly>true</StockOnly>
+</SettingInfo>
