@@ -84,25 +84,23 @@ Public Class ResultControl
 
     End Sub
 
-    Private Sub money_click(sender As Object, e As EventArgs) Handles Panel1.Click
-        'ResultMain.displayControl(ResultMain.PAGE_NUMBER.MONEY_PAGE)
+
+
+    Private Sub BunifuImageButton1_Click(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
+        ResultMain.displayControl(ResultMain.PAGE_NUMBER.STOCK_PAGE)
+
     End Sub
 
-    Private Sub nomat_click(sender As Object, e As EventArgs) Handles Panel3.Click
+    Private Sub BunifuImageButton3_Click(sender As Object, e As EventArgs) Handles BunifuImageButton3.Click
         ResultMain.displayControl(ResultMain.PAGE_NUMBER.NOMATCH_PAGE)
     End Sub
 
-    Private Sub Panel4_Click(sender As Object, e As EventArgs) Handles Panel4.Click
-        ResultMain.displayControl(ResultMain.PAGE_NUMBER.RESULT_PAGE)
+    Private Sub BunifuImageButton4_Click(sender As Object, e As EventArgs) Handles BunifuImageButton4.Click
+        ResultMain.displayControl(ResultMain.PAGE_NUMBER.NOMATCH_PAGE)
+
     End Sub
 
-    Private Sub dbfPanel_Click(sender As Object, e As EventArgs) Handles dbfPanel.Click
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         ResultMain.displayControl(ResultMain.PAGE_NUMBER.DBF_PAGE)
     End Sub
-
-    Private Sub Panel2_Click(sender As Object, e As EventArgs) Handles Panel2.Click
-        ResultMain.displayControl(ResultMain.PAGE_NUMBER.STOCK_PAGE)
-    End Sub
-
-
 End Class

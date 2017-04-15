@@ -33,6 +33,7 @@ Partial Class ResultControl
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuCustomLabel6 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.noCntTB = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel14 = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -44,11 +45,13 @@ Partial Class ResultControl
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.BunifuImageButton3 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuCustomLabel7 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.noMatchTonLB = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.BunifuImageButton4 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuCustomLabel9 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.matchTonLB = New Bunifu.Framework.UI.BunifuCustomLabel()
@@ -71,10 +74,13 @@ Partial Class ResultControl
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.Panel7.SuspendLayout()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.Panel9.SuspendLayout()
+        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.Panel10.SuspendLayout()
+        CType(Me.BunifuImageButton4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.dbfPanel.SuspendLayout()
@@ -94,7 +100,7 @@ Partial Class ResultControl
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel3)
         Me.Panel1.Controls.Add(Me.totalSaveMoneyLB)
         Me.Panel1.Controls.Add(Me.BunifuCustomLabel1)
-        Me.Panel1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel1.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel1.Location = New System.Drawing.Point(34, 46)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(384, 149)
@@ -164,7 +170,7 @@ Partial Class ResultControl
         Me.Panel2.Controls.Add(Me.BunifuCustomLabel13)
         Me.Panel2.Controls.Add(Me.BunifuCustomLabel8)
         Me.Panel2.Controls.Add(Me.BunifuCustomLabel5)
-        Me.Panel2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel2.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel2.Location = New System.Drawing.Point(482, 46)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(550, 149)
@@ -173,12 +179,27 @@ Partial Class ResultControl
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.Panel7.Controls.Add(Me.BunifuImageButton1)
         Me.Panel7.Controls.Add(Me.BunifuCustomLabel6)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(550, 41)
         Me.Panel7.TabIndex = 9
+        '
+        'BunifuImageButton1
+        '
+        Me.BunifuImageButton1.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.BunifuImageButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
+        Me.BunifuImageButton1.ImageActive = Nothing
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(5, 3)
+        Me.BunifuImageButton1.Name = "BunifuImageButton1"
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(40, 35)
+        Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton1.TabIndex = 1
+        Me.BunifuImageButton1.TabStop = False
+        Me.BunifuImageButton1.Zoom = 10
         '
         'BunifuCustomLabel6
         '
@@ -284,7 +305,7 @@ Partial Class ResultControl
         Me.Panel3.Controls.Add(Me.Panel9)
         Me.Panel3.Controls.Add(Me.BunifuCustomLabel4)
         Me.Panel3.Controls.Add(Me.noMatchTonLB)
-        Me.Panel3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel3.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel3.Location = New System.Drawing.Point(397, 263)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(289, 138)
@@ -293,12 +314,27 @@ Partial Class ResultControl
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.Color.Brown
+        Me.Panel9.Controls.Add(Me.BunifuImageButton3)
         Me.Panel9.Controls.Add(Me.BunifuCustomLabel7)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel9.Location = New System.Drawing.Point(0, 0)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(289, 32)
+        Me.Panel9.Size = New System.Drawing.Size(289, 41)
         Me.Panel9.TabIndex = 3
+        '
+        'BunifuImageButton3
+        '
+        Me.BunifuImageButton3.BackColor = System.Drawing.Color.Brown
+        Me.BunifuImageButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuImageButton3.Image = CType(resources.GetObject("BunifuImageButton3.Image"), System.Drawing.Image)
+        Me.BunifuImageButton3.ImageActive = Nothing
+        Me.BunifuImageButton3.Location = New System.Drawing.Point(8, 4)
+        Me.BunifuImageButton3.Name = "BunifuImageButton3"
+        Me.BunifuImageButton3.Size = New System.Drawing.Size(40, 35)
+        Me.BunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton3.TabIndex = 4
+        Me.BunifuImageButton3.TabStop = False
+        Me.BunifuImageButton3.Zoom = 10
         '
         'BunifuCustomLabel7
         '
@@ -336,7 +372,7 @@ Partial Class ResultControl
         Me.Panel4.Controls.Add(Me.Panel10)
         Me.Panel4.Controls.Add(Me.BunifuCustomLabel2)
         Me.Panel4.Controls.Add(Me.matchTonLB)
-        Me.Panel4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel4.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel4.Location = New System.Drawing.Point(743, 263)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(289, 138)
@@ -345,12 +381,27 @@ Partial Class ResultControl
         'Panel10
         '
         Me.Panel10.BackColor = System.Drawing.Color.Coral
+        Me.Panel10.Controls.Add(Me.BunifuImageButton4)
         Me.Panel10.Controls.Add(Me.BunifuCustomLabel9)
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel10.Location = New System.Drawing.Point(0, 0)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(289, 32)
+        Me.Panel10.Size = New System.Drawing.Size(289, 41)
         Me.Panel10.TabIndex = 3
+        '
+        'BunifuImageButton4
+        '
+        Me.BunifuImageButton4.BackColor = System.Drawing.Color.Coral
+        Me.BunifuImageButton4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuImageButton4.Image = CType(resources.GetObject("BunifuImageButton4.Image"), System.Drawing.Image)
+        Me.BunifuImageButton4.ImageActive = Nothing
+        Me.BunifuImageButton4.Location = New System.Drawing.Point(5, 3)
+        Me.BunifuImageButton4.Name = "BunifuImageButton4"
+        Me.BunifuImageButton4.Size = New System.Drawing.Size(40, 35)
+        Me.BunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BunifuImageButton4.TabIndex = 5
+        Me.BunifuImageButton4.TabStop = False
+        Me.BunifuImageButton4.Zoom = 10
         '
         'BunifuCustomLabel9
         '
@@ -388,7 +439,7 @@ Partial Class ResultControl
         Me.Panel5.Controls.Add(Me.Panel8)
         Me.Panel5.Controls.Add(Me.BunifuCustomLabel10)
         Me.Panel5.Controls.Add(Me.totalTonLB)
-        Me.Panel5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel5.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel5.Location = New System.Drawing.Point(38, 263)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(305, 138)
@@ -401,14 +452,14 @@ Partial Class ResultControl
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel8.Location = New System.Drawing.Point(0, 0)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(305, 32)
+        Me.Panel8.Size = New System.Drawing.Size(305, 41)
         Me.Panel8.TabIndex = 3
         '
         'BunifuCustomLabel12
         '
         Me.BunifuCustomLabel12.AutoSize = True
         Me.BunifuCustomLabel12.ForeColor = System.Drawing.Color.White
-        Me.BunifuCustomLabel12.Location = New System.Drawing.Point(100, 10)
+        Me.BunifuCustomLabel12.Location = New System.Drawing.Point(97, 15)
         Me.BunifuCustomLabel12.Name = "BunifuCustomLabel12"
         Me.BunifuCustomLabel12.Size = New System.Drawing.Size(92, 15)
         Me.BunifuCustomLabel12.TabIndex = 3
@@ -441,7 +492,7 @@ Partial Class ResultControl
         Me.dbfPanel.BackColor = System.Drawing.Color.Brown
         Me.dbfPanel.Controls.Add(Me.Panel11)
         Me.dbfPanel.Controls.Add(Me.BunifuCustomLabel11)
-        Me.dbfPanel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.dbfPanel.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.dbfPanel.Location = New System.Drawing.Point(38, 465)
         Me.dbfPanel.Name = "dbfPanel"
         Me.dbfPanel.Size = New System.Drawing.Size(380, 173)
@@ -451,6 +502,7 @@ Partial Class ResultControl
         '
         Me.Panel11.BackColor = System.Drawing.Color.Black
         Me.Panel11.Controls.Add(Me.PictureBox2)
+        Me.Panel11.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel11.Location = New System.Drawing.Point(0, 0)
         Me.Panel11.Name = "Panel11"
@@ -459,6 +511,7 @@ Partial Class ResultControl
         '
         'PictureBox2
         '
+        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(0, 68)
         Me.PictureBox2.Name = "PictureBox2"
@@ -523,14 +576,17 @@ Partial Class ResultControl
         Me.Panel2.PerformLayout()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
+        CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
+        CType(Me.BunifuImageButton3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.Panel10.ResumeLayout(False)
         Me.Panel10.PerformLayout()
+        CType(Me.BunifuImageButton4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         Me.Panel8.ResumeLayout(False)
@@ -585,4 +641,7 @@ Partial Class ResultControl
     Friend WithEvents BunifuElipse4 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents BunifuElipse5 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents BunifuElipse6 As Bunifu.Framework.UI.BunifuElipse
+    Friend WithEvents BunifuImageButton4 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents BunifuImageButton3 As Bunifu.Framework.UI.BunifuImageButton
+    Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
 End Class

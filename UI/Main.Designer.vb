@@ -78,7 +78,7 @@ Partial Class Main
         Me.sidePanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.sidePanel.Location = New System.Drawing.Point(0, 49)
         Me.sidePanel.Name = "sidePanel"
-        Me.sidePanel.Size = New System.Drawing.Size(282, 751)
+        Me.sidePanel.Size = New System.Drawing.Size(282, 951)
         Me.sidePanel.TabIndex = 0
         '
         'BunifuFlatButton4
@@ -142,7 +142,7 @@ Partial Class Main
         Me.menuAni.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
         Me.userAni.SetDecoration(Me.Panel3, BunifuAnimatorNS.DecorationType.None)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel3.Location = New System.Drawing.Point(0, 718)
+        Me.Panel3.Location = New System.Drawing.Point(0, 918)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(282, 33)
         Me.Panel3.TabIndex = 5
@@ -412,7 +412,7 @@ Partial Class Main
         Me.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.mainPanel.Location = New System.Drawing.Point(282, 49)
         Me.mainPanel.Name = "mainPanel"
-        Me.mainPanel.Size = New System.Drawing.Size(1518, 751)
+        Me.mainPanel.Size = New System.Drawing.Size(1518, 951)
         Me.mainPanel.TabIndex = 2
         '
         'userAni
@@ -462,7 +462,7 @@ Partial Class Main
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1800, 800)
+        Me.ClientSize = New System.Drawing.Size(1800, 1000)
         Me.Controls.Add(Me.mainPanel)
         Me.Controls.Add(Me.sidePanel)
         Me.Controls.Add(Me.header)
