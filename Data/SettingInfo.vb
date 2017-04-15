@@ -11,8 +11,7 @@ Public Class SettingInfo
     Private use_32mm As Boolean
     Private mbaseTon As Double
 
-    Private barloss_permit As Double
-    Private cbloss_permit As Double
+    Private loss_permit As Double
     Private onlyStock As Boolean
 
     Private sameShapeOK As Boolean
@@ -54,8 +53,7 @@ Public Class SettingInfo
 
         Dim prototype As SettingInfo = SettingInfo.GetInstance()
 
-        prototype.barLoosPermit = 0.02
-        prototype.CbLossPermit = 0.02
+        prototype.loss_permit = 0.02
 
         prototype.coilexcept = True
         prototype.StockOnly = True
@@ -364,23 +362,16 @@ Public Class SettingInfo
         End Set
 
     End Property
-    Public Property barLoosPermit() As Double
+    Public Property LossPermit() As Double
         Get
-            Return barloss_permit
+            Return loss_permit
         End Get
         Set(value As Double)
-            barloss_permit = value
+            loss_permit = value
         End Set
     End Property
 
-    Public Property CbLossPermit() As Double
-        Get
-            Return cbloss_permit
-        End Get
-        Set(value As Double)
-            cbloss_permit = value
-        End Set
-    End Property
+
     Public Property StockOnly() As Boolean
         Get
             Return onlyStock

@@ -6,15 +6,14 @@ Public Class AlogFacade
 
         isDone = False
 
-        Dim barloss As Double = SettingInfo.GetInstance().barLoosPermit
-        Dim cbloss As Double = SettingInfo.GetInstance().CbLossPermit
+        Dim permitloss As Double = SettingInfo.GetInstance().LossPermit
 
         DataMgrFacade.resultClear()
         DataMgrFacade.prevFiltering()
 
         If SettingInfo.GetInstance().StockOnly = True Then
 
-            Dim alog1 As New StockStrategy1(barloss, cbloss)
+            Dim alog1 As New StockStrategy1(permitloss)
             alog1.exec()
             Dim grade1 As Long = alog1.getTotalSaveMoney()
 
@@ -39,7 +38,7 @@ Public Class AlogFacade
 
         Else
 
-            Dim alog1 As New StandardStrategy1(barloss, cbloss)
+            Dim alog1 As New StandardStrategy1(permitloss)
             alog1.exec()
             Dim grade1 As Long = alog1.getTotalSaveMoney()
 

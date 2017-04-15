@@ -37,7 +37,7 @@
 
     Public Function check(loss As Double) As Boolean Implements Alog.check
 
-        Dim ploss As Double = SettingInfo.GetInstance().CbLossPermit
+        Dim ploss As Double = SettingInfo.GetInstance().LossPermit
 
         If loss <= (ploss * 100) Then
             Return True

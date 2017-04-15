@@ -39,10 +39,10 @@ Partial Class ResultStock_list
         Me.combineProgress = New Bunifu.Framework.UI.BunifuCircleProgressbar()
         Me.cutProgress = New Bunifu.Framework.UI.BunifuCircleProgressbar()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.BunifuSeparator1 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.tab1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.tab2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.listmain = New System.Windows.Forms.Panel()
-        Me.BunifuSeparator1 = New Bunifu.Framework.UI.BunifuSeparator()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -219,7 +219,7 @@ Partial Class ResultStock_list
         Me.combineProgress.ProgressColor = System.Drawing.Color.Red
         Me.combineProgress.Size = New System.Drawing.Size(111, 111)
         Me.combineProgress.TabIndex = 13
-        Me.combineProgress.Value = 60
+        Me.combineProgress.Value = 0
         '
         'cutProgress
         '
@@ -241,7 +241,7 @@ Partial Class ResultStock_list
         Me.cutProgress.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.cutProgress.Size = New System.Drawing.Size(111, 111)
         Me.cutProgress.TabIndex = 12
-        Me.cutProgress.Value = 60
+        Me.cutProgress.Value = 0
         '
         'Panel2
         '
@@ -254,6 +254,19 @@ Partial Class ResultStock_list
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1213, 53)
         Me.Panel2.TabIndex = 2
+        '
+        'BunifuSeparator1
+        '
+        Me.BunifuSeparator1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BunifuSeparator1.LineThickness = 3
+        Me.BunifuSeparator1.Location = New System.Drawing.Point(30, 34)
+        Me.BunifuSeparator1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.BunifuSeparator1.Name = "BunifuSeparator1"
+        Me.BunifuSeparator1.Size = New System.Drawing.Size(27, 10)
+        Me.BunifuSeparator1.TabIndex = 2
+        Me.BunifuSeparator1.Transparency = 255
+        Me.BunifuSeparator1.Vertical = False
         '
         'tab1
         '
@@ -282,19 +295,6 @@ Partial Class ResultStock_list
         Me.listmain.Name = "listmain"
         Me.listmain.Size = New System.Drawing.Size(1213, 573)
         Me.listmain.TabIndex = 1
-        '
-        'BunifuSeparator1
-        '
-        Me.BunifuSeparator1.BackColor = System.Drawing.Color.Transparent
-        Me.BunifuSeparator1.LineColor = System.Drawing.Color.DarkOrange
-        Me.BunifuSeparator1.LineThickness = 3
-        Me.BunifuSeparator1.Location = New System.Drawing.Point(30, 34)
-        Me.BunifuSeparator1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.BunifuSeparator1.Name = "BunifuSeparator1"
-        Me.BunifuSeparator1.Size = New System.Drawing.Size(27, 10)
-        Me.BunifuSeparator1.TabIndex = 2
-        Me.BunifuSeparator1.Transparency = 255
-        Me.BunifuSeparator1.Vertical = False
         '
         'ResultStock_list
         '

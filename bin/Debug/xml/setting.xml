@@ -23,8 +23,8 @@
   <step1>75</step1>
   <coilexcept>true</coilexcept>
   <sameSceneIsOK>false</sameSceneIsOK>
-  <sameKongjungIsOK>true</sameKongjungIsOK>
-  <sameShapeIsOK>true</sameShapeIsOK>
+  <sameKongjungIsOK>false</sameKongjungIsOK>
+  <sameShapeIsOK>false</sameShapeIsOK>
   <Use10mm>true</Use10mm>
   <Use13mm>true</Use13mm>
   <Use16mm>true</Use16mm>
@@ -33,7 +33,6 @@
   <Use25mm>true</Use25mm>
   <Use29mm>true</Use29mm>
   <Use32mm>true</Use32mm>
-  <barLoosPermit>0.03</barLoosPermit>
-  <CbLossPermit>0.03</CbLossPermit>
+  <LossPermit>0.02</LossPermit>
   <StockOnly>true</StockOnly>
 </SettingInfo>

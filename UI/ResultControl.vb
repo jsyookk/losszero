@@ -96,7 +96,7 @@ Public Class ResultControl
     End Sub
 
     Private Sub BunifuImageButton4_Click(sender As Object, e As EventArgs) Handles BunifuImageButton4.Click
-        ResultMain.displayControl(ResultMain.PAGE_NUMBER.NOMATCH_PAGE)
+        ResultMain.displayControl(ResultMain.PAGE_NUMBER.RESULT_PAGE)
 
     End Sub
 

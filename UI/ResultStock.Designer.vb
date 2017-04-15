@@ -78,7 +78,7 @@ Partial Class ResultStock
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(325, 229)
+        Me.Panel2.Size = New System.Drawing.Size(325, 235)
         Me.Panel2.TabIndex = 8
         '
         'BunifuImageButton2
@@ -89,6 +89,7 @@ Partial Class ResultStock
         Me.BunifuImageButton2.Location = New System.Drawing.Point(281, 33)
         Me.BunifuImageButton2.Name = "BunifuImageButton2"
         Me.BunifuImageButton2.Size = New System.Drawing.Size(38, 33)
+        Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuImageButton2.TabIndex = 10
         Me.BunifuImageButton2.TabStop = False
         Me.BunifuImageButton2.Zoom = 10
@@ -123,7 +124,7 @@ Partial Class ResultStock
         Me.tabPanel.Controls.Add(Me.mTab)
         Me.tabPanel.Controls.Add(Me.gTab)
         Me.tabPanel.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.tabPanel.Location = New System.Drawing.Point(0, 176)
+        Me.tabPanel.Location = New System.Drawing.Point(0, 182)
         Me.tabPanel.Name = "tabPanel"
         Me.tabPanel.Size = New System.Drawing.Size(325, 53)
         Me.tabPanel.TabIndex = 7
@@ -251,9 +252,9 @@ Partial Class ResultStock
         '
         Me.detailPanel.AutoScroll = True
         Me.detailPanel.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.detailPanel.Location = New System.Drawing.Point(0, 229)
+        Me.detailPanel.Location = New System.Drawing.Point(0, 235)
         Me.detailPanel.Name = "detailPanel"
-        Me.detailPanel.Size = New System.Drawing.Size(325, 522)
+        Me.detailPanel.Size = New System.Drawing.Size(325, 516)
         Me.detailPanel.TabIndex = 7
         '
         'listPanel

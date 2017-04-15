@@ -29,10 +29,9 @@ Public Class ZXmlSerialization : Inherits ZSerialization
 
         'realsetting = setting.Clone()
 
-        realsetting.barLoosPermit = setting.barLoosPermit
+        realsetting.LossPermit = setting.LossPermit
         realsetting.coilexcept = setting.coilexcept
         realsetting.StockOnly = setting.StockOnly
-        realsetting.CbLossPermit = setting.CbLossPermit
 
         realsetting.sameSceneIsOK = setting.sameSceneIsOK
         realsetting.sameKongjungIsOK = setting.sameKongjungIsOK

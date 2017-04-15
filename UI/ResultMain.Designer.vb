@@ -29,8 +29,9 @@ Partial Class ResultMain
         '
         Me.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.mainPanel.Location = New System.Drawing.Point(0, 0)
+        Me.mainPanel.MaximumSize = New System.Drawing.Size(1920, 1080)
         Me.mainPanel.Name = "mainPanel"
-        Me.mainPanel.Size = New System.Drawing.Size(1538, 751)
+        Me.mainPanel.Size = New System.Drawing.Size(1538, 900)
         Me.mainPanel.TabIndex = 0
         '
         'ResultMain
@@ -39,7 +40,7 @@ Partial Class ResultMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.mainPanel)
         Me.Name = "ResultMain"
-        Me.Size = New System.Drawing.Size(1538, 751)
+        Me.Size = New System.Drawing.Size(1538, 900)
         Me.ResumeLayout(False)
 
     End Sub

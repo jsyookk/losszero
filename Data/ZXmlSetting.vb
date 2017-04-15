@@ -47,8 +47,7 @@ Public Class ZXmlSetting : Inherits ZXml
             writer.WriteElementString("Use29mm", setting.Use29mm)
             writer.WriteElementString("Use32mm", setting.Use32mm)
 
-            writer.WriteElementString("barLoosPermit", setting.barLoosPermit)
-            writer.WriteElementString("CbLossPermit", setting.CbLossPermit)
+            writer.WriteElementString("LossPermit", setting.LossPermit)
             writer.WriteElementString("StockOnly", setting.StockOnly)
 
             writer.WriteElementString("RemainOK", setting.remainIsOK)
@@ -128,8 +127,7 @@ Public Class ZXmlSetting : Inherits ZXml
             setting.baseTON = m_xmld.ReadElementString("baseTon")
 
             setting.remainIsOK = m_xmld.ReadElementString("RemainOK")
-            setting.barLoosPermit = m_xmld.ReadElementString("barLoosPermit")
-            setting.CbLossPermit = m_xmld.ReadElementString("CbLossPermit")
+            setting.LossPermit = m_xmld.ReadElementString("LossPermit")
             setting.StockOnly = m_xmld.ReadElementString("StockOnly")
             setting.LossAsTon = m_xmld.ReadElementString("lossAsTon")
 
@@ -179,10 +177,9 @@ Public Class ZXmlSetting : Inherits ZXml
             writer.WriteElementString("Use32mm", setting.Use32mm)
             writer.WriteElementString("baseTon", setting.baseTON)
 
-            writer.WriteElementString("barLoosPermit", setting.barLoosPermit)
+            writer.WriteElementString("LossPermit", setting.LossPermit)
             writer.WriteElementString("RemainOK", setting.remainIsOK)
 
-            writer.WriteElementString("CbLossPermit", setting.CbLossPermit)
             writer.WriteElementString("StockOnly", setting.StockOnly)
             writer.WriteElementString("LossAsTon", setting.LossAsTon)
 

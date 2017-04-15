@@ -127,7 +127,7 @@ Partial Class ResultMatch
         Me.errProgressbar.ProgressColor = System.Drawing.Color.DarkGoldenrod
         Me.errProgressbar.Size = New System.Drawing.Size(111, 111)
         Me.errProgressbar.TabIndex = 14
-        Me.errProgressbar.Value = 60
+        Me.errProgressbar.Value = 0
         '
         'resultTotalTonLB
         '
@@ -210,7 +210,7 @@ Partial Class ResultMatch
         Me.combineProgress.ProgressColor = System.Drawing.Color.Yellow
         Me.combineProgress.Size = New System.Drawing.Size(111, 111)
         Me.combineProgress.TabIndex = 7
-        Me.combineProgress.Value = 60
+        Me.combineProgress.Value = 0
         '
         'BunifuImageButton1
         '
@@ -275,7 +275,7 @@ Partial Class ResultMatch
         Me.zumProgress.ProgressColor = System.Drawing.Color.Red
         Me.zumProgress.Size = New System.Drawing.Size(111, 111)
         Me.zumProgress.TabIndex = 2
-        Me.zumProgress.Value = 60
+        Me.zumProgress.Value = 0
         '
         'cutProgress
         '
@@ -297,7 +297,7 @@ Partial Class ResultMatch
         Me.cutProgress.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(15, Byte), Integer))
         Me.cutProgress.Size = New System.Drawing.Size(111, 111)
         Me.cutProgress.TabIndex = 1
-        Me.cutProgress.Value = 60
+        Me.cutProgress.Value = 0
         '
         'zzangdaeProgress
         '
@@ -319,7 +319,7 @@ Partial Class ResultMatch
         Me.zzangdaeProgress.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.zzangdaeProgress.Size = New System.Drawing.Size(111, 111)
         Me.zzangdaeProgress.TabIndex = 0
-        Me.zzangdaeProgress.Value = 60
+        Me.zzangdaeProgress.Value = 0
         '
         'Panel2
         '

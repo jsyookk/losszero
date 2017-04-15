@@ -7,18 +7,16 @@ Public Class ZangDaeAlog : Implements Alog
     Dim cntNUM As Integer = 0
     Dim filter As BaseChkFilter = New BaseChkFilterDefaultFactory().makeZangDaeCHKFilter()
     Dim meterWhat As Alog.METER_CAT
-    Dim permitLoss As Double = 0.0
 
 
-    Public Sub New(meterw As Alog.METER_CAT, loss As Double)
+    Public Sub New(meterw As Alog.METER_CAT)
 
         Me.meterWhat = meterw
-        Me.permitLoss = loss
 
     End Sub
     Public Function check(loss As Double) As Boolean Implements Alog.check
 
-        Dim ploss As Double = SettingInfo.GetInstance().barLoosPermit
+        Dim ploss As Double = SettingInfo.GetInstance().LossPermit
 
         If loss <= (ploss * 100) Then
             Return True

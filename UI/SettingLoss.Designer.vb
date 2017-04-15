@@ -26,11 +26,8 @@ Partial Class SettingLoss
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SettingLoss))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel2 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.cutlossTB = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
-        Me.combinelossTB = New WindowsFormsControlLibrary1.BunifuCustomTextbox()
         Me.BunifuCustomLabel3 = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.BunifuCustomLabel4 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuCustomLabel5 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.BunifuSeparator1 = New Bunifu.Framework.UI.BunifuSeparator()
@@ -47,54 +44,28 @@ Partial Class SettingLoss
         'BunifuCustomLabel1
         '
         Me.BunifuCustomLabel1.AutoSize = True
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(427, 143)
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(71, 145)
         Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(72, 15)
+        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(122, 15)
         Me.BunifuCustomLabel1.TabIndex = 0
-        Me.BunifuCustomLabel1.Text = "컷팅 로스"
-        '
-        'BunifuCustomLabel2
-        '
-        Me.BunifuCustomLabel2.AutoSize = True
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(74, 143)
-        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
-        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(72, 15)
-        Me.BunifuCustomLabel2.TabIndex = 1
-        Me.BunifuCustomLabel2.Text = "조합 로스"
+        Me.BunifuCustomLabel1.Text = "허용치 로스 입력"
         '
         'cutlossTB
         '
         Me.cutlossTB.BorderColor = System.Drawing.Color.SeaGreen
-        Me.cutlossTB.Location = New System.Drawing.Point(430, 195)
+        Me.cutlossTB.Location = New System.Drawing.Point(77, 202)
         Me.cutlossTB.Name = "cutlossTB"
         Me.cutlossTB.Size = New System.Drawing.Size(161, 25)
         Me.cutlossTB.TabIndex = 2
         '
-        'combinelossTB
-        '
-        Me.combinelossTB.BorderColor = System.Drawing.Color.SeaGreen
-        Me.combinelossTB.Location = New System.Drawing.Point(77, 195)
-        Me.combinelossTB.Name = "combinelossTB"
-        Me.combinelossTB.Size = New System.Drawing.Size(161, 25)
-        Me.combinelossTB.TabIndex = 3
-        '
         'BunifuCustomLabel3
         '
         Me.BunifuCustomLabel3.AutoSize = True
-        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(597, 205)
+        Me.BunifuCustomLabel3.Location = New System.Drawing.Point(244, 212)
         Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
         Me.BunifuCustomLabel3.Size = New System.Drawing.Size(18, 15)
         Me.BunifuCustomLabel3.TabIndex = 4
         Me.BunifuCustomLabel3.Text = "%"
-        '
-        'BunifuCustomLabel4
-        '
-        Me.BunifuCustomLabel4.AutoSize = True
-        Me.BunifuCustomLabel4.Location = New System.Drawing.Point(244, 205)
-        Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
-        Me.BunifuCustomLabel4.Size = New System.Drawing.Size(18, 15)
-        Me.BunifuCustomLabel4.TabIndex = 5
-        Me.BunifuCustomLabel4.Text = "%"
         '
         'BunifuImageButton1
         '
@@ -163,13 +134,10 @@ Partial Class SettingLoss
         Me.Controls.Add(Me.BunifuCustomLabel6)
         Me.Controls.Add(Me.chkLossTon)
         Me.Controls.Add(Me.BunifuCustomLabel5)
-        Me.Controls.Add(Me.BunifuCustomLabel2)
         Me.Controls.Add(Me.BunifuCustomLabel1)
         Me.Controls.Add(Me.cutlossTB)
-        Me.Controls.Add(Me.combinelossTB)
         Me.Controls.Add(Me.BunifuImageButton1)
         Me.Controls.Add(Me.BunifuCustomLabel3)
-        Me.Controls.Add(Me.BunifuCustomLabel4)
         Me.Controls.Add(Me.BunifuSeparator1)
         Me.Name = "SettingLoss"
         Me.Size = New System.Drawing.Size(938, 490)
@@ -181,11 +149,8 @@ Partial Class SettingLoss
 
     Friend WithEvents BunifuElipse1 As Bunifu.Framework.UI.BunifuElipse
     Friend WithEvents BunifuCustomLabel1 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents BunifuCustomLabel2 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuImageButton1 As Bunifu.Framework.UI.BunifuImageButton
-    Friend WithEvents BunifuCustomLabel4 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuCustomLabel3 As Bunifu.Framework.UI.BunifuCustomLabel
-    Friend WithEvents combinelossTB As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents cutlossTB As WindowsFormsControlLibrary1.BunifuCustomTextbox
     Friend WithEvents BunifuCustomLabel5 As Bunifu.Framework.UI.BunifuCustomLabel
     Friend WithEvents BunifuSeparator1 As Bunifu.Framework.UI.BunifuSeparator

@@ -193,7 +193,7 @@ Partial Class ResultControl
         Me.BunifuImageButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuImageButton1.Image = CType(resources.GetObject("BunifuImageButton1.Image"), System.Drawing.Image)
         Me.BunifuImageButton1.ImageActive = Nothing
-        Me.BunifuImageButton1.Location = New System.Drawing.Point(5, 3)
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(505, 3)
         Me.BunifuImageButton1.Name = "BunifuImageButton1"
         Me.BunifuImageButton1.Size = New System.Drawing.Size(40, 35)
         Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -328,7 +328,7 @@ Partial Class ResultControl
         Me.BunifuImageButton3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuImageButton3.Image = CType(resources.GetObject("BunifuImageButton3.Image"), System.Drawing.Image)
         Me.BunifuImageButton3.ImageActive = Nothing
-        Me.BunifuImageButton3.Location = New System.Drawing.Point(8, 4)
+        Me.BunifuImageButton3.Location = New System.Drawing.Point(246, 3)
         Me.BunifuImageButton3.Name = "BunifuImageButton3"
         Me.BunifuImageButton3.Size = New System.Drawing.Size(40, 35)
         Me.BunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -395,7 +395,7 @@ Partial Class ResultControl
         Me.BunifuImageButton4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuImageButton4.Image = CType(resources.GetObject("BunifuImageButton4.Image"), System.Drawing.Image)
         Me.BunifuImageButton4.ImageActive = Nothing
-        Me.BunifuImageButton4.Location = New System.Drawing.Point(5, 3)
+        Me.BunifuImageButton4.Location = New System.Drawing.Point(244, 2)
         Me.BunifuImageButton4.Name = "BunifuImageButton4"
         Me.BunifuImageButton4.Size = New System.Drawing.Size(40, 35)
         Me.BunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom

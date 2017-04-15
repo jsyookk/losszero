@@ -125,8 +125,6 @@
   <ItemGroup>
     <Compile Include="Alog\Alog.vb" />
     <Compile Include="Alog\AlogStrategy.vb" />
-    <Compile Include="Alog\StandardStrategy2.vb" />
-    <Compile Include="Alog\StockStrategy2.vb" />
     <Compile Include="Alog\StockStrategy1.vb" />
     <Compile Include="Alog\StandardStrategy1.vb" />
     <Compile Include="Alog\CombineAlogVisitor.vb" />
